@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>employee</h1>
+    <form enctype="multipart/form-data" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <h2>empeducationdetail</h2>
+        {{ empducationdetail.as_p }}
+        {{ empworkdetail.as_p }}
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
